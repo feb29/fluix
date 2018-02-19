@@ -1,0 +1,17 @@
+[package]
+name    = "funnel"
+version = "0.1.0"
+authors = ["Kohei Watanabe <xbeef29@gmail.com>"]
+readme  = "README.md"
+license = "Unlicense/MIT"
+repository  = "https://github.com/symplectik/fabric/funnel"
+keywords    = ["index"]
+categories  = ["data-structures"]
+description = "filtering data"
+
+[dependencies]
+compacts = { version = "0.10", path = "../compacts" }
+
+[dev-dependencies]
+lazy_static = "1"
+rand = "0.6"

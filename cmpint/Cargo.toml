@@ -1,0 +1,20 @@
+[package]
+name    = "cmpint"
+version = "0.1.0"
+authors = ["Kohei Watanabe <xbeef29@gmail.com>"]
+readme  = "README.md"
+license = "Unlicense/MIT"
+repository  = "https://github.com/symplectik/fabric/cmpint"
+keywords    = ["array", "integer", "compress"]
+categories  = ["data-structures"]
+description = """
+a compressed array of integers.
+"""
+
+[dependencies]
+byteorder = "1"
+
+[dev-dependencies]
+quickcheck = "0.6"
+bitpacking = { version = "0.4", features = ["simd"] }
+rand = "0.5"

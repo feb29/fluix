@@ -1,13 +1,2 @@
-[package]
-name    = "fluix"
-version = "0.1.0"
-authors = ["Kohei Watanabe <xbeef29@gmail.com>"]
-readme  = "README.md"
-license = "Unlicense/MIT"
-repository  = "https://github.com/feb29/compacts"
-keywords    = ["index"]
-categories  = ["data-structures"]
-description = "indexing"
-
-[dependencies]
-compacts = "0.7.2"
+[workspace]
+members = ["compacts"]
