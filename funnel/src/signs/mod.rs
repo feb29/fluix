@@ -9,15 +9,15 @@ use std::{
     marker::PhantomData,
 };
 
-use compacts::bit;
+use compacts::bits;
 
-type Repr = bit::Words<u64>;
+type Repr = bits::IndexMap<u64, bits::RoaringBlock>;
 
 // n: 256, fp: 0.06
 const DEFAULT_SIZEOF_FILTER: usize = 1500;
 const DEFAULT_SIZEOF_HASHES: usize = 5;
 
-/// Signs is an index for filtering data probabilistically.
+/// Signs is an k for filtering data probabilistically.
 #[derive(Clone)]
 pub struct Signs<S = RandomState> {
     signs: Vec<Repr>, // inverted signatures.
@@ -27,7 +27,7 @@ pub struct Signs<S = RandomState> {
 
 /// Sign is a row of Signs, that represents fingerprint of data (a.k.a bloom filter).
 pub struct Sign<B: Borrow<Signs<S>>, S = RandomState> {
-    index: u64,
+    k: u64,
     signs: B,
     state: PhantomData<S>,
 }
@@ -98,24 +98,16 @@ impl<S> Signs<S> {
         &mut self.signs[i]
     }
 
-    pub fn sign(&self, index: u64) -> Sign<&Signs<S>, S> {
+    pub fn sign(&self, k: u64) -> Sign<&Signs<S>, S> {
         let signs = self;
         let state = PhantomData;
-        Sign {
-            index,
-            signs,
-            state,
-        }
+        Sign { k, signs, state }
     }
 
-    pub fn sign_mut(&mut self, index: u64) -> Sign<&mut Signs<S>, S> {
+    pub fn sign_mut(&mut self, k: u64) -> Sign<&mut Signs<S>, S> {
         let signs = self;
         let state = PhantomData;
-        Sign {
-            index,
-            signs,
-            state,
-        }
+        Sign { k, signs, state }
     }
 }
 
@@ -156,7 +148,7 @@ where
         let kbits = signs.kbits();
         let khash = signs.khash();
         let hashi = |i| hash_at(hs, i) % kbits;
-        (0..khash).all(|k| signs.bits(hashi(k)).get(self.index))
+        (0..khash).all(|k| signs.bits(hashi(k)).get(self.k))
     }
 }
 
@@ -179,7 +171,7 @@ where
         let khash = signs.khash();
         let hashi = |i| hash_at(hs, i) % kbits;
         for k in 0..khash {
-            signs.bits_mut(hashi(k)).insert(self.index);
+            signs.bits_mut(hashi(k)).insert(self.k);
         }
     }
 }
@@ -195,8 +187,8 @@ mod tests {
             let (kbits, khash) = optimal_params(n, fp);
             let bytes_per_point = (kbits as f64 / n as f64) / 8.0;
             println!(
-                "n:{:5} fp: {:.4}, bits:{:5} hash:{} {:.4}",
-                n, fp, kbits, khash, bytes_per_point
+                "n:{} fp:{:.4}, hash:{}, bits:{}, {:.8}",
+                n, fp, khash, kbits, bytes_per_point
             );
         };
 
@@ -210,6 +202,9 @@ mod tests {
             docheck(1 << 11, fp);
             docheck(1 << 12, fp);
             docheck(1 << 13, fp);
+
+            docheck(1 << 16, fp);
+            docheck(1 << 32, fp);
         };
 
         from_fp(0.01);
@@ -217,9 +212,8 @@ mod tests {
         from_fp(0.03);
         from_fp(0.04);
         from_fp(0.05);
-        from_fp(0.055);
         from_fp(0.06);
         from_fp(0.10);
-        from_fp(0.15);
+        from_fp(0.20);
     }
 }

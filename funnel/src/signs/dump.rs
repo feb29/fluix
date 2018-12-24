@@ -10,32 +10,32 @@ mod disp {
 }
 
 pub struct Dump<'a, S: 'a, F: disp::Format> {
-    index: u64,
+    k: u64,
     signs: &'a Signs<S>,
     _fmt: PhantomData<F>,
 }
 
 impl<B: Borrow<Signs<S>>, S> Sign<B, S> {
     pub fn bin_dump(&self) -> Dump<S, disp::Bin> {
-        let index = self.index;
+        let k = self.k;
         let signs = self.signs.borrow();
         let _fmt = PhantomData;
-        Dump { index, signs, _fmt }
+        Dump { k, signs, _fmt }
     }
 
     pub fn hex_dump(&self) -> Dump<S, disp::Hex> {
-        let index = self.index;
+        let k = self.k;
         let signs = self.signs.borrow();
         let _fmt = PhantomData;
-        Dump { index, signs, _fmt }
+        Dump { k, signs, _fmt }
     }
 }
 
 macro_rules! fmtdebug {
-    ($signs:expr, $index:expr, $f:expr, $p:expr, $rev:expr) => {{
+    ($signs:expr, $k:expr, $f:expr, $p:expr, $rev:expr) => {{
         let mut n: u8 = 0;
 
-        write!($f, "index:0x{:08X}", $index)?;
+        write!($f, "k:0x{:08X}", $k)?;
         macro_rules! putn {
             ($p2: expr) => {
                 if $rev {
@@ -47,7 +47,7 @@ macro_rules! fmtdebug {
         }
 
         for (i, sign) in $signs.signs.iter().enumerate() {
-            if sign.get($index) {
+            if sign.get($k) {
                 n |= 1 << (i % 8);
             }
 
@@ -79,12 +79,12 @@ fn test_reverse_bits() {
 
 impl<'a, S: 'a> fmt::Debug for Dump<'a, S, disp::Bin> {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        fmtdebug!(self.signs, self.index, f, "{:08b}", true)
+        fmtdebug!(self.signs, self.k, f, "{:08b}", true)
     }
 }
 
 impl<'a, S: 'a> fmt::Debug for Dump<'a, S, disp::Hex> {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        fmtdebug!(self.signs, self.index, f, "{:02x}", false)
+        fmtdebug!(self.signs, self.k, f, "{:02x}", false)
     }
 }

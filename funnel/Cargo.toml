@@ -1,11 +1,12 @@
 [package]
 name    = "funnel"
 version = "0.1.0"
+edition = "2018"
 authors = ["Kohei Watanabe <xbeef29@gmail.com>"]
 readme  = "README.md"
-license = "Unlicense/MIT"
+license = "Apache-2.0/MIT"
 repository  = "https://github.com/symplectik/fabric/funnel"
-keywords    = ["index"]
+keywords    = []
 categories  = ["data-structures"]
 description = "filtering data"
 

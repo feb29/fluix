@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use std::cell::RefCell;
 
 #[derive(Debug, Clone)]
@@ -47,17 +49,11 @@ impl_UnionFind!(u8, u16, u32, u64);
 
 #[test]
 fn union_find() {
-    macro_rules! check_UnionFind {
-        ($( $ty:ty ),*) => ($(
-            let mut uf = UnionFind::<$ty>::new(100);
-            for i in 1..99 {
-                assert!(uf.join(i + 1, 1));
-            }
-            for i in 1..99 {
-                assert!(uf.same(1, i + 1));
-            }
-        )*)
-    }
-
-    check_UnionFind!(u8, u16, u32, u64);
+    let mut uf = UnionFind::<u64>::new(100);
+    uf.join(1, 30);
+    uf.join(2, 10);
+    uf.join(3, 20);
+    uf.join(4, 10);
+    assert!(uf.same(1, 30));
+    assert!(uf.same(2, 4));
 }

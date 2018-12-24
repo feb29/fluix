@@ -5,23 +5,17 @@ edition = "2018"
 build   = "build.rs"
 authors = ["Kohei Watanabe <xbeef29@gmail.com>"]
 readme  = "README.md"
-license = "Unlicense/MIT"
-exclude = ["tests/*.bin"]
+license = "Apache-2.0/MIT"
 repository  = "https://github.com/symplectik/fabric/compacts"
-keywords    = ["succinct", "bitmap", "bitvec", "bitset"]
+keywords    = ["compact", "succinct", "rank", "select"]
 categories  = ["data-structures"]
-description = """
-compact data structures
-"""
+description = "compact data structures"
 
 [dependencies]
-# rayon = "1"
 
 [build-dependencies]
 
-# tests, benchmarks and examples
 [dev-dependencies]
-quickcheck = "0.7"
-lazy_static = "1"
 rand = "0.6"
-libc = "*"
+quickcheck = "0.8"
+lazy_static = "1"

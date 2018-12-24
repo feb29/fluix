@@ -74,7 +74,7 @@ fn bitpacking4x_encode(b: &mut Bencher) {
     // and uses the best available implementation accordingly.
     let bitpacker = BitPacker4x::new();
 
-    // Computes the number of bits used for each integers in the blocks.
+    // Computes the number of bits used for each integers in the vs.
     // my_data is assumed to have a len of 128 for `BitPacker4x`.
     let num_bits: u8 = bitpacker.num_bits(&data);
 

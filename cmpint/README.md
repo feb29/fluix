@@ -1,5 +1,3 @@
-# Compact Data Structures
-
 ## License
 
 Licensed under either of

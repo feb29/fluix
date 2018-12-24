@@ -1,0 +1,314 @@
+
+running 68 tests
+test bits::encode::binary_heap::number_of_runs ... ignored
+test bits::encode::test_into_members ... ignored
+test bits::mask::range::head_to_last ... ignored
+test bits::tests::bitops::access ... ignored
+test bits::tests::bitops::count ... ignored
+test bits::tests::bitops::insert ... ignored
+test bits::tests::bitops::rank ... ignored
+test bits::tests::bitops::remove ... ignored
+test bits::tests::bitops::select ... ignored
+test bits::tests::default_value ... ignored
+test bits::tests::entry::u128::associative ... ignored
+test bits::tests::entry::u128::commutative ... ignored
+test bits::tests::entry::u128::dict ... ignored
+test bits::tests::entry::u128::ops ... ignored
+test bits::tests::entry::u16::associative ... ignored
+test bits::tests::entry::u16::commutative ... ignored
+test bits::tests::entry::u16::dict ... ignored
+test bits::tests::entry::u16::ops ... ignored
+test bits::tests::entry::u32::associative ... ignored
+test bits::tests::entry::u32::commutative ... ignored
+test bits::tests::entry::u32::dict ... ignored
+test bits::tests::entry::u32::ops ... ignored
+test bits::tests::entry::u64::associative ... ignored
+test bits::tests::entry::u64::commutative ... ignored
+test bits::tests::entry::u64::dict ... ignored
+test bits::tests::entry::u64::ops ... ignored
+test bits::tests::entry::u8::associative ... ignored
+test bits::tests::entry::u8::commutative ... ignored
+test bits::tests::entry::u8::dict ... ignored
+test bits::tests::entry::u8::ops ... ignored
+test bits::tests::entry::usize::associative ... ignored
+test bits::tests::entry::usize::commutative ... ignored
+test bits::tests::entry::usize::dict ... ignored
+test bits::tests::entry::usize::ops ... ignored
+test bits::tests::words::access ... ignored
+test bits::tests::words::bitand ... ignored
+test bits::tests::words::bitnot ... ignored
+test bits::tests::words::bitor ... ignored
+test bits::tests::words::bitxor ... ignored
+test bits::tests::words::count ... ignored
+test bits::tests::words::insert ... ignored
+test bits::tests::words::rank ... ignored
+test bits::tests::words::remove ... ignored
+test bits::tests::words::select ... ignored
+test bits::tests::words::u128::associative ... ignored
+test bits::tests::words::u128::commutative ... ignored
+test bits::tests::words::u128::dict ... ignored
+test bits::tests::words::u128::ops ... ignored
+test bits::tests::words::u16::associative ... ignored
+test bits::tests::words::u16::commutative ... ignored
+test bits::tests::words::u16::dict ... ignored
+test bits::tests::words::u16::ops ... ignored
+test bits::tests::words::u32::associative ... ignored
+test bits::tests::words::u32::commutative ... ignored
+test bits::tests::words::u32::dict ... ignored
+test bits::tests::words::u32::ops ... ignored
+test bits::tests::words::u64::associative ... ignored
+test bits::tests::words::u64::commutative ... ignored
+test bits::tests::words::u64::dict ... ignored
+test bits::tests::words::u64::ops ... ignored
+test bits::tests::words::u8::associative ... ignored
+test bits::tests::words::u8::commutative ... ignored
+test bits::tests::words::u8::dict ... ignored
+test bits::tests::words::u8::ops ... ignored
+test bits::tests::words::usize::associative ... ignored
+test bits::tests::words::usize::commutative ... ignored
+test bits::tests::words::usize::dict ... ignored
+test bits::tests::words::usize::ops ... ignored
+
+test result: ok. 0 passed; 0 failed; 68 ignored; 0 measured; 0 filtered out
+
+
+running 225 tests
+test size_001m::vec_map_00::access                 ... bench:          13 ns/iter (+/- 0)
+test size_001m::vec_map_00::bitwise_and            ... bench:       8,967 ns/iter (+/- 858)
+test size_001m::vec_map_00::bitwise_fold_and       ... bench:      11,766 ns/iter (+/- 2,112)
+test size_001m::vec_map_00::bitwise_fold_or        ... bench:      30,641 ns/iter (+/- 1,336)
+test size_001m::vec_map_00::bitwise_fold_xor       ... bench:      32,774 ns/iter (+/- 6,923)
+test size_001m::vec_map_00::bitwise_or             ... bench:      21,052 ns/iter (+/- 2,376)
+test size_001m::vec_map_00::bitwise_range_fold_and ... bench:      67,861 ns/iter (+/- 9,096)
+test size_001m::vec_map_00::bitwise_range_fold_or  ... bench:      93,692 ns/iter (+/- 14,348)
+test size_001m::vec_map_00::bitwise_range_fold_xor ... bench:      95,130 ns/iter (+/- 5,417)
+test size_001m::vec_map_00::bitwise_xor            ... bench:      24,781 ns/iter (+/- 2,631)
+test size_001m::vec_map_00::insert                 ... bench:          16 ns/iter (+/- 1)
+test size_001m::vec_map_00::rank1                  ... bench:       3,132 ns/iter (+/- 495)
+test size_001m::vec_map_00::remove                 ... bench:          12 ns/iter (+/- 1)
+test size_001m::vec_map_00::select0                ... bench:     197,492 ns/iter (+/- 87,009)
+test size_001m::vec_map_00::select1                ... bench:       3,415 ns/iter (+/- 984)
+test size_001m::vec_map_01::access                 ... bench:          12 ns/iter (+/- 0)
+test size_001m::vec_map_01::bitwise_and            ... bench:      21,878 ns/iter (+/- 2,608)
+test size_001m::vec_map_01::bitwise_fold_and       ... bench:      16,275 ns/iter (+/- 2,772)
+test size_001m::vec_map_01::bitwise_fold_or        ... bench:      32,610 ns/iter (+/- 852)
+test size_001m::vec_map_01::bitwise_fold_xor       ... bench:      32,687 ns/iter (+/- 2,663)
+test size_001m::vec_map_01::bitwise_or             ... bench:      19,734 ns/iter (+/- 1,801)
+test size_001m::vec_map_01::bitwise_range_fold_and ... bench:      67,806 ns/iter (+/- 17,539)
+test size_001m::vec_map_01::bitwise_range_fold_or  ... bench:      89,250 ns/iter (+/- 4,029)
+test size_001m::vec_map_01::bitwise_range_fold_xor ... bench:      89,605 ns/iter (+/- 6,338)
+test size_001m::vec_map_01::bitwise_xor            ... bench:      24,134 ns/iter (+/- 2,267)
+test size_001m::vec_map_01::insert                 ... bench:          16 ns/iter (+/- 2)
+test size_001m::vec_map_01::rank1                  ... bench:       3,256 ns/iter (+/- 622)
+test size_001m::vec_map_01::remove                 ... bench:          12 ns/iter (+/- 1)
+test size_001m::vec_map_01::select0                ... bench:     197,857 ns/iter (+/- 29,448)
+test size_001m::vec_map_01::select1                ... bench:       3,492 ns/iter (+/- 1,249)
+test size_001m::vec_map_05::access                 ... bench:          12 ns/iter (+/- 1)
+test size_001m::vec_map_05::bitwise_and            ... bench:      24,514 ns/iter (+/- 9,483)
+test size_001m::vec_map_05::bitwise_fold_and       ... bench:      21,926 ns/iter (+/- 2,441)
+test size_001m::vec_map_05::bitwise_fold_or        ... bench:      32,396 ns/iter (+/- 3,111)
+test size_001m::vec_map_05::bitwise_fold_xor       ... bench:      32,484 ns/iter (+/- 6,600)
+test size_001m::vec_map_05::bitwise_or             ... bench:      19,988 ns/iter (+/- 4,264)
+test size_001m::vec_map_05::bitwise_range_fold_and ... bench:      69,308 ns/iter (+/- 31,747)
+test size_001m::vec_map_05::bitwise_range_fold_or  ... bench:      85,664 ns/iter (+/- 21,606)
+test size_001m::vec_map_05::bitwise_range_fold_xor ... bench:      88,999 ns/iter (+/- 34,172)
+test size_001m::vec_map_05::bitwise_xor            ... bench:      24,268 ns/iter (+/- 2,671)
+test size_001m::vec_map_05::insert                 ... bench:          16 ns/iter (+/- 1)
+test size_001m::vec_map_05::rank1                  ... bench:       3,084 ns/iter (+/- 734)
+test size_001m::vec_map_05::remove                 ... bench:          12 ns/iter (+/- 1)
+test size_001m::vec_map_05::select0                ... bench:     202,073 ns/iter (+/- 14,653)
+test size_001m::vec_map_05::select1                ... bench:       3,629 ns/iter (+/- 754)
+test size_001m::vec_map_10::access                 ... bench:          12 ns/iter (+/- 0)
+test size_001m::vec_map_10::bitwise_and            ... bench:      21,940 ns/iter (+/- 2,125)
+test size_001m::vec_map_10::bitwise_fold_and       ... bench:      26,647 ns/iter (+/- 2,111)
+test size_001m::vec_map_10::bitwise_fold_or        ... bench:      32,629 ns/iter (+/- 3,317)
+test size_001m::vec_map_10::bitwise_fold_xor       ... bench:      32,653 ns/iter (+/- 2,976)
+test size_001m::vec_map_10::bitwise_or             ... bench:      19,902 ns/iter (+/- 1,984)
+test size_001m::vec_map_10::bitwise_range_fold_and ... bench:      73,548 ns/iter (+/- 6,517)
+test size_001m::vec_map_10::bitwise_range_fold_or  ... bench:      84,119 ns/iter (+/- 11,628)
+test size_001m::vec_map_10::bitwise_range_fold_xor ... bench:      84,130 ns/iter (+/- 14,807)
+test size_001m::vec_map_10::bitwise_xor            ... bench:      24,185 ns/iter (+/- 2,854)
+test size_001m::vec_map_10::insert                 ... bench:          16 ns/iter (+/- 1)
+test size_001m::vec_map_10::rank1                  ... bench:       3,152 ns/iter (+/- 708)
+test size_001m::vec_map_10::remove                 ... bench:          12 ns/iter (+/- 1)
+test size_001m::vec_map_10::select0                ... bench:     205,392 ns/iter (+/- 37,519)
+test size_001m::vec_map_10::select1                ... bench:       3,689 ns/iter (+/- 585)
+test size_001m::vec_map_50::access                 ... bench:          13 ns/iter (+/- 2)
+test size_001m::vec_map_50::bitwise_and            ... bench:      22,392 ns/iter (+/- 5,877)
+test size_001m::vec_map_50::bitwise_fold_and       ... bench:      39,556 ns/iter (+/- 4,172)
+test size_001m::vec_map_50::bitwise_fold_or        ... bench:      32,368 ns/iter (+/- 6,592)
+test size_001m::vec_map_50::bitwise_fold_xor       ... bench:      32,159 ns/iter (+/- 4,534)
+test size_001m::vec_map_50::bitwise_or             ... bench:      19,879 ns/iter (+/- 2,696)
+test size_001m::vec_map_50::bitwise_range_fold_and ... bench:      93,477 ns/iter (+/- 33,216)
+test size_001m::vec_map_50::bitwise_range_fold_or  ... bench:      84,832 ns/iter (+/- 14,096)
+test size_001m::vec_map_50::bitwise_range_fold_xor ... bench:      84,051 ns/iter (+/- 13,807)
+test size_001m::vec_map_50::bitwise_xor            ... bench:      24,298 ns/iter (+/- 1,992)
+test size_001m::vec_map_50::insert                 ... bench:          16 ns/iter (+/- 1)
+test size_001m::vec_map_50::rank1                  ... bench:       3,377 ns/iter (+/- 709)
+test size_001m::vec_map_50::remove                 ... bench:          13 ns/iter (+/- 1)
+test size_001m::vec_map_50::select0                ... bench:     210,573 ns/iter (+/- 76,931)
+test size_001m::vec_map_50::select1                ... bench:       3,728 ns/iter (+/- 330)
+test size_010m::vec_map_00::access                 ... bench:          15 ns/iter (+/- 2)
+test size_010m::vec_map_00::bitwise_and            ... bench:      84,059 ns/iter (+/- 48,166)
+test size_010m::vec_map_00::bitwise_fold_and       ... bench:     105,434 ns/iter (+/- 31,033)
+test size_010m::vec_map_00::bitwise_fold_or        ... bench:     586,524 ns/iter (+/- 144,177)
+test size_010m::vec_map_00::bitwise_fold_xor       ... bench:     812,188 ns/iter (+/- 581,746)
+test size_010m::vec_map_00::bitwise_or             ... bench:     512,428 ns/iter (+/- 399,720)
+test size_010m::vec_map_00::bitwise_range_fold_and ... bench:      67,803 ns/iter (+/- 14,887)
+test size_010m::vec_map_00::bitwise_range_fold_or  ... bench:      90,806 ns/iter (+/- 11,112)
+test size_010m::vec_map_00::bitwise_range_fold_xor ... bench:      94,502 ns/iter (+/- 14,389)
+test size_010m::vec_map_00::bitwise_xor            ... bench:     452,360 ns/iter (+/- 116,009)
+test size_010m::vec_map_00::insert                 ... bench:          17 ns/iter (+/- 1)
+test size_010m::vec_map_00::rank1                  ... bench:       3,097 ns/iter (+/- 148)
+test size_010m::vec_map_00::remove                 ... bench:          15 ns/iter (+/- 1)
+test size_010m::vec_map_00::select0                ... bench:   1,506,108 ns/iter (+/- 161,840)
+test size_010m::vec_map_00::select1                ... bench:      35,660 ns/iter (+/- 4,468)
+test size_010m::vec_map_01::access                 ... bench:          15 ns/iter (+/- 2)
+test size_010m::vec_map_01::bitwise_and            ... bench:     413,501 ns/iter (+/- 220,790)
+test size_010m::vec_map_01::bitwise_fold_and       ... bench:     156,444 ns/iter (+/- 17,698)
+test size_010m::vec_map_01::bitwise_fold_or        ... bench:     599,461 ns/iter (+/- 283,056)
+test size_010m::vec_map_01::bitwise_fold_xor       ... bench:     582,790 ns/iter (+/- 165,560)
+test size_010m::vec_map_01::bitwise_or             ... bench:     390,043 ns/iter (+/- 115,041)
+test size_010m::vec_map_01::bitwise_range_fold_and ... bench:      65,452 ns/iter (+/- 5,923)
+test size_010m::vec_map_01::bitwise_range_fold_or  ... bench:      86,383 ns/iter (+/- 7,082)
+test size_010m::vec_map_01::bitwise_range_fold_xor ... bench:      86,479 ns/iter (+/- 13,021)
+test size_010m::vec_map_01::bitwise_xor            ... bench:     446,582 ns/iter (+/- 241,607)
+test size_010m::vec_map_01::insert                 ... bench:          18 ns/iter (+/- 1)
+test size_010m::vec_map_01::rank1                  ... bench:       3,253 ns/iter (+/- 140)
+test size_010m::vec_map_01::remove                 ... bench:          17 ns/iter (+/- 2)
+test size_010m::vec_map_01::select0                ... bench:   1,521,590 ns/iter (+/- 238,204)
+test size_010m::vec_map_01::select1                ... bench:      35,203 ns/iter (+/- 2,105)
+test size_010m::vec_map_05::access                 ... bench:          15 ns/iter (+/- 0)
+test size_010m::vec_map_05::bitwise_and            ... bench:     413,840 ns/iter (+/- 90,873)
+test size_010m::vec_map_05::bitwise_fold_and       ... bench:     244,521 ns/iter (+/- 150,840)
+test size_010m::vec_map_05::bitwise_fold_or        ... bench:     600,979 ns/iter (+/- 222,078)
+test size_010m::vec_map_05::bitwise_fold_xor       ... bench:     575,909 ns/iter (+/- 38,842)
+test size_010m::vec_map_05::bitwise_or             ... bench:     392,426 ns/iter (+/- 113,435)
+test size_010m::vec_map_05::bitwise_range_fold_and ... bench:      84,892 ns/iter (+/- 30,020)
+test size_010m::vec_map_05::bitwise_range_fold_or  ... bench:      75,552 ns/iter (+/- 8,007)
+test size_010m::vec_map_05::bitwise_range_fold_xor ... bench:      81,056 ns/iter (+/- 14,663)
+test size_010m::vec_map_05::bitwise_xor            ... bench:     620,849 ns/iter (+/- 336,920)
+test size_010m::vec_map_05::insert                 ... bench:          18 ns/iter (+/- 3)
+test size_010m::vec_map_05::rank1                  ... bench:       3,372 ns/iter (+/- 727)
+test size_010m::vec_map_05::remove                 ... bench:          16 ns/iter (+/- 2)
+test size_010m::vec_map_05::select0                ... bench:   1,477,683 ns/iter (+/- 263,389)
+test size_010m::vec_map_05::select1                ... bench:      35,365 ns/iter (+/- 7,102)
+test size_010m::vec_map_10::access                 ... bench:          16 ns/iter (+/- 1)
+test size_010m::vec_map_10::bitwise_and            ... bench:     412,112 ns/iter (+/- 98,017)
+test size_010m::vec_map_10::bitwise_fold_and       ... bench:     450,900 ns/iter (+/- 186,254)
+test size_010m::vec_map_10::bitwise_fold_or        ... bench:     600,056 ns/iter (+/- 475,296)
+test size_010m::vec_map_10::bitwise_fold_xor       ... bench:     583,106 ns/iter (+/- 76,499)
+test size_010m::vec_map_10::bitwise_or             ... bench:     394,123 ns/iter (+/- 135,692)
+test size_010m::vec_map_10::bitwise_range_fold_and ... bench:      78,097 ns/iter (+/- 23,609)
+test size_010m::vec_map_10::bitwise_range_fold_or  ... bench:      69,399 ns/iter (+/- 13,601)
+test size_010m::vec_map_10::bitwise_range_fold_xor ... bench:      69,226 ns/iter (+/- 5,936)
+test size_010m::vec_map_10::bitwise_xor            ... bench:     435,472 ns/iter (+/- 273,292)
+test size_010m::vec_map_10::insert                 ... bench:          18 ns/iter (+/- 0)
+test size_010m::vec_map_10::rank1                  ... bench:       3,274 ns/iter (+/- 870)
+test size_010m::vec_map_10::remove                 ... bench:          16 ns/iter (+/- 0)
+test size_010m::vec_map_10::select0                ... bench:   1,468,980 ns/iter (+/- 191,021)
+test size_010m::vec_map_10::select1                ... bench:      34,524 ns/iter (+/- 2,228)
+test size_010m::vec_map_50::access                 ... bench:          15 ns/iter (+/- 0)
+test size_010m::vec_map_50::bitwise_and            ... bench:     410,049 ns/iter (+/- 243,365)
+test size_010m::vec_map_50::bitwise_fold_and       ... bench:     661,951 ns/iter (+/- 171,644)
+test size_010m::vec_map_50::bitwise_fold_or        ... bench:     587,013 ns/iter (+/- 164,519)
+test size_010m::vec_map_50::bitwise_fold_xor       ... bench:     590,621 ns/iter (+/- 144,670)
+test size_010m::vec_map_50::bitwise_or             ... bench:     540,287 ns/iter (+/- 276,022)
+test size_010m::vec_map_50::bitwise_range_fold_and ... bench:      97,391 ns/iter (+/- 10,128)
+test size_010m::vec_map_50::bitwise_range_fold_or  ... bench:      87,407 ns/iter (+/- 4,128)
+test size_010m::vec_map_50::bitwise_range_fold_xor ... bench:      99,958 ns/iter (+/- 55,988)
+test size_010m::vec_map_50::bitwise_xor            ... bench:     456,161 ns/iter (+/- 445,334)
+test size_010m::vec_map_50::insert                 ... bench:          18 ns/iter (+/- 2)
+test size_010m::vec_map_50::rank1                  ... bench:       3,309 ns/iter (+/- 304)
+test size_010m::vec_map_50::remove                 ... bench:          15 ns/iter (+/- 0)
+test size_010m::vec_map_50::select0                ... bench:   1,522,868 ns/iter (+/- 117,784)
+test size_010m::vec_map_50::select1                ... bench:       9,512 ns/iter (+/- 629)
+test size_100m::vec_map_00::access                 ... bench:          17 ns/iter (+/- 0)
+test size_100m::vec_map_00::bitwise_and            ... bench:   1,721,317 ns/iter (+/- 560,143)
+test size_100m::vec_map_00::bitwise_fold_and       ... bench:   1,766,039 ns/iter (+/- 490,949)
+test size_100m::vec_map_00::bitwise_fold_or        ... bench:   8,655,863 ns/iter (+/- 3,110,036)
+test size_100m::vec_map_00::bitwise_fold_xor       ... bench:  11,431,224 ns/iter (+/- 5,044,502)
+test size_100m::vec_map_00::bitwise_or             ... bench:   5,686,675 ns/iter (+/- 3,325,598)
+test size_100m::vec_map_00::bitwise_range_fold_and ... bench:      65,431 ns/iter (+/- 16,670)
+test size_100m::vec_map_00::bitwise_range_fold_or  ... bench:      90,340 ns/iter (+/- 8,395)
+test size_100m::vec_map_00::bitwise_range_fold_xor ... bench:      90,810 ns/iter (+/- 15,648)
+test size_100m::vec_map_00::bitwise_xor            ... bench:   6,500,085 ns/iter (+/- 4,920,891)
+test size_100m::vec_map_00::insert                 ... bench:          20 ns/iter (+/- 1)
+test size_100m::vec_map_00::rank1                  ... bench:       3,224 ns/iter (+/- 112)
+test size_100m::vec_map_00::remove                 ... bench:          18 ns/iter (+/- 5)
+test size_100m::vec_map_00::select0                ... bench:  25,093,039 ns/iter (+/- 23,816,594)
+test size_100m::vec_map_00::select1                ... bench:     609,100 ns/iter (+/- 260,453)
+test size_100m::vec_map_01::access                 ... bench:          17 ns/iter (+/- 2)
+test size_100m::vec_map_01::bitwise_and            ... bench:   5,756,612 ns/iter (+/- 1,326,728)
+test size_100m::vec_map_01::bitwise_fold_and       ... bench:   2,677,109 ns/iter (+/- 1,170,041)
+test size_100m::vec_map_01::bitwise_fold_or        ... bench:   8,207,584 ns/iter (+/- 5,785,048)
+test size_100m::vec_map_01::bitwise_fold_xor       ... bench:   8,418,292 ns/iter (+/- 2,997,933)
+test size_100m::vec_map_01::bitwise_or             ... bench:   5,492,154 ns/iter (+/- 722,149)
+test size_100m::vec_map_01::bitwise_range_fold_and ... bench:      68,771 ns/iter (+/- 3,206)
+test size_100m::vec_map_01::bitwise_range_fold_or  ... bench:      90,311 ns/iter (+/- 9,672)
+test size_100m::vec_map_01::bitwise_range_fold_xor ... bench:      91,022 ns/iter (+/- 16,392)
+test size_100m::vec_map_01::bitwise_xor            ... bench:   6,490,755 ns/iter (+/- 3,288,112)
+test size_100m::vec_map_01::insert                 ... bench:          21 ns/iter (+/- 3)
+test size_100m::vec_map_01::rank1                  ... bench:       3,309 ns/iter (+/- 248)
+test size_100m::vec_map_01::remove                 ... bench:          17 ns/iter (+/- 0)
+test size_100m::vec_map_01::select0                ... bench:  24,552,653 ns/iter (+/- 3,822,249)
+test size_100m::vec_map_01::select1                ... bench:     631,577 ns/iter (+/- 121,702)
+test size_100m::vec_map_05::access                 ... bench:          17 ns/iter (+/- 0)
+test size_100m::vec_map_05::bitwise_and            ... bench:   5,960,855 ns/iter (+/- 3,401,943)
+test size_100m::vec_map_05::bitwise_fold_and       ... bench:   3,925,647 ns/iter (+/- 2,973,940)
+test size_100m::vec_map_05::bitwise_fold_or        ... bench:   9,123,281 ns/iter (+/- 2,371,638)
+test size_100m::vec_map_05::bitwise_fold_xor       ... bench:   9,863,409 ns/iter (+/- 6,303,245)
+test size_100m::vec_map_05::bitwise_or             ... bench:   6,023,033 ns/iter (+/- 2,922,841)
+test size_100m::vec_map_05::bitwise_range_fold_and ... bench:      75,826 ns/iter (+/- 10,240)
+test size_100m::vec_map_05::bitwise_range_fold_or  ... bench:      92,120 ns/iter (+/- 10,692)
+test size_100m::vec_map_05::bitwise_range_fold_xor ... bench:      93,555 ns/iter (+/- 19,207)
+test size_100m::vec_map_05::bitwise_xor            ... bench:   6,758,522 ns/iter (+/- 893,001)
+test size_100m::vec_map_05::insert                 ... bench:          21 ns/iter (+/- 1)
+test size_100m::vec_map_05::rank1                  ... bench:       3,367 ns/iter (+/- 211)
+test size_100m::vec_map_05::remove                 ... bench:          17 ns/iter (+/- 0)
+test size_100m::vec_map_05::select0                ... bench:  25,475,808 ns/iter (+/- 17,795,905)
+test size_100m::vec_map_05::select1                ... bench:      78,659 ns/iter (+/- 14,245)
+test size_100m::vec_map_10::access                 ... bench:          20 ns/iter (+/- 1)
+test size_100m::vec_map_10::bitwise_and            ... bench:   5,819,924 ns/iter (+/- 4,961,951)
+test size_100m::vec_map_10::bitwise_fold_and       ... bench:   7,051,593 ns/iter (+/- 1,583,415)
+test size_100m::vec_map_10::bitwise_fold_or        ... bench:   8,899,294 ns/iter (+/- 1,940,349)
+test size_100m::vec_map_10::bitwise_fold_xor       ... bench:   8,585,557 ns/iter (+/- 1,205,973)
+test size_100m::vec_map_10::bitwise_or             ... bench:   5,641,213 ns/iter (+/- 1,016,980)
+test size_100m::vec_map_10::bitwise_range_fold_and ... bench:      79,945 ns/iter (+/- 12,685)
+test size_100m::vec_map_10::bitwise_range_fold_or  ... bench:      73,077 ns/iter (+/- 8,805)
+test size_100m::vec_map_10::bitwise_range_fold_xor ... bench:      73,259 ns/iter (+/- 5,125)
+test size_100m::vec_map_10::bitwise_xor            ... bench:   6,577,110 ns/iter (+/- 988,775)
+test size_100m::vec_map_10::insert                 ... bench:          20 ns/iter (+/- 1)
+test size_100m::vec_map_10::rank1                  ... bench:       3,237 ns/iter (+/- 2,338)
+test size_100m::vec_map_10::remove                 ... bench:          18 ns/iter (+/- 1)
+test size_100m::vec_map_10::select0                ... bench:  24,483,156 ns/iter (+/- 3,937,487)
+test size_100m::vec_map_10::select1                ... bench:      37,400 ns/iter (+/- 5,903)
+test size_100m::vec_map_50::access                 ... bench:          17 ns/iter (+/- 1)
+test size_100m::vec_map_50::bitwise_and            ... bench:   6,162,391 ns/iter (+/- 946,680)
+test size_100m::vec_map_50::bitwise_fold_and       ... bench:   9,498,347 ns/iter (+/- 2,490,409)
+test size_100m::vec_map_50::bitwise_fold_or        ... bench:  10,508,878 ns/iter (+/- 3,995,923)
+test size_100m::vec_map_50::bitwise_fold_xor       ... bench:   8,564,401 ns/iter (+/- 6,221,513)
+test size_100m::vec_map_50::bitwise_or             ... bench:   5,602,033 ns/iter (+/- 1,449,040)
+test size_100m::vec_map_50::bitwise_range_fold_and ... bench:     100,915 ns/iter (+/- 32,614)
+test size_100m::vec_map_50::bitwise_range_fold_or  ... bench:      89,958 ns/iter (+/- 18,071)
+test size_100m::vec_map_50::bitwise_range_fold_xor ... bench:      89,073 ns/iter (+/- 7,791)
+test size_100m::vec_map_50::bitwise_xor            ... bench:   6,691,235 ns/iter (+/- 2,142,373)
+test size_100m::vec_map_50::insert                 ... bench:          20 ns/iter (+/- 2)
+test size_100m::vec_map_50::rank1                  ... bench:       3,317 ns/iter (+/- 1,135)
+test size_100m::vec_map_50::remove                 ... bench:          17 ns/iter (+/- 0)
+test size_100m::vec_map_50::select0                ... bench:  24,583,826 ns/iter (+/- 8,793,347)
+test size_100m::vec_map_50::select1                ... bench:       9,823 ns/iter (+/- 902)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 225 measured; 0 filtered out
+
+
+running 6 tests
+test rrr15_decode ... bench:           6 ns/iter (+/- 0)
+test rrr15_encode ... bench:          57 ns/iter (+/- 6)
+test rrr31_decode ... bench:          26 ns/iter (+/- 0)
+test rrr31_encode ... bench:         105 ns/iter (+/- 7)
+test rrr63_decode ... bench:          55 ns/iter (+/- 2)
+test rrr63_encode ... bench:         206 ns/iter (+/- 14)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 6 measured; 0 filtered out
+
